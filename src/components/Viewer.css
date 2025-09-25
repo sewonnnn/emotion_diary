@@ -1,0 +1,69 @@
+.Viewer > section {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  /*  수직정렬의 경우  flex-direction: column; 무조건 사용
+      수평정렬 일 때는 생략 가능 */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Viewer > section > h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Viewer .emotion_img_wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*요소간 간격을 일정하게 분배하는 속성*/
+  justify-content: space-around;
+  color: white;
+  font-size: 25px;
+}
+
+.Viewer .emotion_1 {
+  background-color: rgb(100, 201, 100);
+}
+
+.Viewer .emotion_2 {
+  background-color: rgb(157, 215, 114);
+}
+
+.Viewer .emotion_3 {
+  background-color: rgb(253, 206, 33);
+}
+
+.Viewer .emotion_4 {
+  background-color: rgb(253, 132, 70);
+}
+
+.Viewer .emotion_5 {
+  background-color: rgb(253, 86, 95);
+}
+
+.Viewer .content_wrapper {
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px;
+
+  /* content 내용이 길어지더라도 자연스러운 줄바꿈을 위해 속성 추가 */
+  /* 단어 중간에서 줄바꿈을 방지 */
+  word-break: keep-all;
+  /* 너무 긴 단어는 줄바꿈 허용 */
+  overflow-wrap: break-word;
+}
+
+/* >는 직계 자식일 때, > 생략은 후손일 */
+.Viewer .content_wrapper > p {
+  padding: 20px;
+  text-align: left; /* 글자를 왼쪽으로 정렬*/
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.5; /*줄 간격, 중앙 정렬 시, 줄 간격과 높이를 맞추는 것*/
+}

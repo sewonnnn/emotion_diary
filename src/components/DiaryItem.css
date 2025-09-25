@@ -1,0 +1,64 @@
+.DiaryItem {
+  display: flex;
+  gap: 15px;
+  /* space-between: 요소 배치를 최대한 간격을 벌려서 설정해주는 속성 */
+  justify-content: space-between;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.DiaryItem .img_section {
+  min-width: 120px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.DiaryItem .emotion_1 {
+  background-color: rgb(100, 201, 100);
+}
+
+.DiaryItem .emotion_2 {
+  background-color: rgb(157, 215, 114);
+}
+
+.DiaryItem .emotion_3 {
+  background-color: rgb(253, 206, 33);
+}
+
+.DiaryItem .emotion_4 {
+  background-color: rgb(253, 132, 70);
+}
+
+.DiaryItem .emotion_5 {
+  background-color: rgb(253, 86, 95);
+}
+
+.DiaryItem .img_section img {
+  width: 50%;
+}
+
+.DiaryItem .info_section {
+  /*다른 요소를 침범하지 않는 선에서 가장 넓게 설정*/
+  flex: 1;
+  min-width: 0; /* 내부 내용이 줄어들도록 처리 */
+  cursor: pointer;
+}
+
+.DiaryItem .info_section .create_date {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.DiaryItem .info_section .contente {
+  font-size: 18px;
+  overflow: hidden; /*div 사이즈보다 내용이 커지면 그 부분을 숨김 처리*/
+  text-overflow: ellipsis; /* 잘린 부분을 생략기호로 표시 "..." */
+  white-space: nowrap; /*내용이 한줄로 표시*/
+}
+
+.DiaryItem .button_section {
+  min-width: 70px;
+}

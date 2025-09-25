@@ -1,0 +1,36 @@
+.Editor > section {
+  margin-bottom: 40px;
+}
+
+.Editor > section > h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Editor > section > input,
+textarea {
+  background-color: rgb(236, 236, 236);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.Editor > section > textarea {
+  width: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
+  resize: vertical; /*수직 방향으로만 크기조절 허용*/
+}
+
+.Editor .emotion_section .emotion_wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 2%;
+}
+
+.Editor .button_section {
+  display: flex;
+  /*버튼들을 양쪽 끝에 배치*/
+  justify-content: space-between;
+}

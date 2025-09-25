@@ -1,0 +1,21 @@
+.Button {
+  background-color: rgb(236, 236, 236);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+
+  /* 버튼 안에 텍스트를 화면이 작아져도 줄바꿈 되지 않도록 설정 */
+  white-space: noWrap;
+}
+
+.Button_POSITIVE {
+  background-color: rgb(100, 201, 100);
+  color: white;
+}
+
+.Button_NEGATIVE {
+  background-color: rgb(253, 86, 95);
+  color: white;
+}
