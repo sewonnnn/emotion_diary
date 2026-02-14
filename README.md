@@ -1,12 +1,78 @@
-# React + Vite
+# 📘 Emotion Diary (감정일기)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React로 제작한 감정 기록 기반 일기 웹 애플리케이션입니다.  
+사용자가 자신의 감정을 선택하고, 그 감정을 글로 풀어내며 하루를 정리할 수 있도록 만든 서비스입니다.
 
-Currently, two official plugins are available:
+단순한 일기 작성이 아니라, 감정에 집중하여 스스로의 상태를 돌아볼 수 있도록 설계했습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧠 프로젝트 소개
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Emotion Diary는 하루 동안 느낀 감정을 선택하고, 그 감정을 중심으로 일기를 작성하는 감정 기록 플랫폼입니다.
+
+- 오늘의 감정을 선택
+- 감정을 기반으로 일기 작성
+- 감정 흐름을 시각적으로 확인
+- 나의 상태를 스스로 돌아볼 수 있는 개인 기록 공간
+
+감정을 단순히 텍스트로 남기는 것이 아니라, 감정 자체를 중심으로 기록을 남긴다는 점이 핵심입니다.
+
+---
+
+## 🎯 주요 기능
+
+### 1. 감정 선택
+- 여러 감정 상태 중 하나를 선택
+- 선택한 감정이 해당 일기의 대표 감정으로 저장
+
+### 2. 일기 작성
+- 감정에 맞는 하루의 경험과 생각을 자유롭게 기록
+- 제목 및 본문 입력
+
+### 3. 일기 목록 조회
+- 작성한 일기를 리스트 형태로 확인
+- 감정 상태를 함께 표시
+
+### 4. 일기 상세 보기
+- 작성한 감정과 내용을 상세하게 확인
+- 특정 날짜의 감정 상태를 다시 돌아볼 수 있음
+
+### 5. 감정 흐름 확인
+- 시간이 지남에 따라 나의 감정 패턴을 파악 가능
+
+---
+
+## 🛠 기술 스택
+
+- **Frontend**: React
+- **Language**: JavaScript
+- **State Management**: React Hooks
+- **Styling**: CSS
+
+---
+
+## 💡 기획 의도
+
+현대인은 다양한 감정을 느끼지만, 그것을 제대로 기록하거나 돌아볼 기회는 많지 않습니다.  
+이 프로젝트는 단순한 일기 앱이 아닌, 감정 중심의 기록을 통해 스스로를 이해하는 경험을 제공하는 것을 목표로 합니다.
+
+- 감정을 인지하는 습관 만들기
+- 하루를 정리하는 시간 제공
+- 감정 패턴을 통해 자기 이해도 향상
+
+--
+
+
+## 🚀 실행 방법
+
+```bash
+npm install
+npm start
+```
+
+## 📈 향후 개선 방향
+감정 통계 시각화 기능 추가
+캘린더 기반 감정 기록 조회
+다크모드 지원
+백엔드 연동을 통한 데이터 영구 저장
